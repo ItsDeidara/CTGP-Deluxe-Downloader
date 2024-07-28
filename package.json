@@ -1,0 +1,27 @@
+{
+  "titleId": "01a93828fb170000",
+  "name": "CTGP-Deluxe-Downloader",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "build": "esbuild --bundle --sourcemap --sources-content=false --target=es2022 --format=esm --outdir=romfs src/main.ts",
+    "nro": "nxjs-nro",
+    "nsp": "nxjs-nsp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nx.js/constants": "^0.1.5",
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "@nx.js/nro": "^0.0.49",
+    "@nx.js/nsp": "^0.0.35",
+    "esbuild": "^0.17.19",
+    "nxjs-runtime": "^0.0.49"
+  },
+  "author": {
+    "name": "Red",
+    "email": "Red@nunya.com"
+  }
+}
